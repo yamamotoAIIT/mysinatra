@@ -2,13 +2,20 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 get '/' do
-  "Hello, Tokyo!"
+  erb :index
 end
 
-get '/yamamoto' do
-  "Hello, Yamamoto!"
-end
+# get '/about' do
+#   @content = 'Studying sinatra'
+#   @name    =  'Yamamoto'
+#   erb :about
+# end
 
-get '/shuhei' do
-  "Hello, shuhei!!!"
-end
+# get '/' do
+#   erb :index
+# end
+#
+# get '/:name' do |n|
+#   @name = n
+#   erb :index
+# end
